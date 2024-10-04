@@ -1,0 +1,95 @@
+/* Header container */
+.nav-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0px 10px 10px -15px #111;
+}
+
+.nav-header a {
+  text-decoration: none;
+}
+
+/* Logo heading */
+.logo-heading {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 35px;
+  color: #1f1f1f;
+}
+
+@media screen and (max-width: 576px) {
+  .logo-heading {
+    font-size: 25px;
+  }
+}
+
+/* Right side of header */
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Replaces ms-auto */
+}
+
+.my-orders-text {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #585555;
+  margin-right: 16px; /* Replaces Bootstrap margin */
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: transparent;
+  border: 1px solid #dc3545; /* Replaces btn-outline-danger */
+  color: #dc3545;
+  font-size: 12px;
+  padding: 6px 12px; /* Adjusted for a button size similar to btn-sm */
+  border-radius: 4px;
+  margin-right: 16px; /* Replaces Bootstrap margin */
+  cursor: pointer;
+}
+
+/* Cart icon link container */
+.cart-icon-link {
+  position: relative;
+}
+
+/* Cart icon button */
+.cart-icon-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Cart icon */
+.cart-icon {
+  font-size: 35px;
+  color: #585555;
+}
+
+/* Cart count badge */
+.cart-count-badge {
+  background-color: #ff6347;
+  position: absolute;
+  top: -13px;
+  right: -8px;
+  height: 25px;
+  min-width: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cart count text */
+.cart-count {
+  text-align: center;
+  color: #ffff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0;
+}

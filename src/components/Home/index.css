@@ -1,0 +1,70 @@
+/* Spinner styles */
+.spinner-container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #ff6347;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tab container */
+.tab-container {
+  display: flex;
+  overflow-x: auto;
+  box-shadow: 0px 10px 10px -15px #111;
+  padding: 0;
+  list-style-type: none;
+}
+
+.each-tab-item {
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active-tab-item {
+  color: #ff6347;
+  border-bottom: 2px solid #ff6347;
+  font-weight: 600;
+}
+
+/* Tab button */
+.tab-category-button {
+  color: inherit;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: black;
+}
+
+/* Dishes list container */
+.dishes-list-container {
+  list-style-type: none;
+  padding: 25px;
+}
+
+.home-background {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
